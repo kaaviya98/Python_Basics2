@@ -15,7 +15,7 @@ def infinte_sequence():
         yield a
         a+=1
 for i in infinte_sequence():
-    # if(i<=100):
+    if(i<=100):
          print (i)
 #Fibonacci
 def fib(maxi):

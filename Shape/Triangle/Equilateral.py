@@ -1,4 +1,4 @@
-from __init__ import Triangle
+from main1 import Triangle
 class Equilateral(Triangle):
     def __init__(self,sides,base,hei,angles):
         super().__init__(sides,base,hei)
@@ -13,27 +13,27 @@ class Equilateral(Triangle):
             if self.angles[i-1]==self.angles[i]:
                 flag1=flag1+1
         if flag>1 and flag1>1:
-            return 1
+            return True
         else :
-            return 0
-sides=[]
-n=int(input("Enter no of items: "))
-for i in range (0,n):
-    e=int(input("Enter the number"))
-    sides.append(e)
-base=int(input("Enter the base: "))
-hei=int(input("Enter the per_height")) 
-angles=[]
-n=int(input("Enter no of items: "))
-for i in range (0,n):
-    e=int(input("Enter the angle"))
-    angles.append(e)          
-e=Equilateral(sides,base,hei,angles)
-print(e.area())
-print(e.perimeter())
+            return False
 
-value=e.is_Equilateral()
-if value == 1:
-    print("Yes")
-else:
-    print("No")
+angles=[];sides=[];base=0;height=0
+# n=int(input("Enter no of items: "))
+# for i in range (0,n):
+#     e=int(input("Enter the side"))
+#     sides.append(e)
+# base=int(input("Enter the base: "))
+# hei=int(input("Enter the per_height")) 
+# n=int(input("Enter no of items: "))
+# for i in range (0,n):
+#     e=int(input("Enter the angle"))
+#     angles.append(e)          
+e=Equilateral(sides,base,height,angles)
+# print(e.area())
+# print(e.perimeter())
+
+# value=e.is_Equilateral()
+# if value == 1:
+#     print("Yes")
+# else:
+#     print("No")
