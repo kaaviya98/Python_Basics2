@@ -61,10 +61,12 @@ asyncio.run(main())
 #if the called task takes longer time the main task does not wait  but instead we can use await task
 #at the end for the completion
 ## range 
-x=['a','a','d','s','w',]
-for i in range (1,len(x)):
-       x=x.__getitem__(i)
-       print(x)
+# x=['a','a','d','s','w',]
+# for i in range (1,len(x)):
+#        x=x.__getitem__(i)
+#        print(x)
+print(main1.__name__)
+
 
 
 

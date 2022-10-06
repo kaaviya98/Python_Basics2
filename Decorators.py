@@ -60,6 +60,7 @@ str("Kaaviya")
 
 def dec_div(func):
     def inner(*args,**kwargs):
+            print("we got Divided")
             return func(*args,**kwargs)
     return inner
 @dec_div

@@ -1,3 +1,4 @@
+'''Main fuctions of triangle'''
 class Triangle:
     def __init__(self,sides,base,per_height):
         self.sides=sides
@@ -5,12 +6,14 @@ class Triangle:
         self.per_height=per_height
     def area(self):
         area=(1/2)*self.base *self.per_height
-        return area
+        return (area) 
     def perimeter(self):
         sum =0
         for i in self.sides:
             sum =sum +i
         return sum
+if __name__=='__main__':
+    t=Triangle([3,3,3],4,5)
 # sides=[]
 # n=int(input("Enter no of items: "))
 # for i in range (0,n):
@@ -19,8 +22,10 @@ class Triangle:
 # base=int(input("Enter the base: "))
 # hei=int(input("Enter the per_height"))
 # t=Triangle(sides,base,hei)
-# area=t.area()
-# perimeter=t.perimeter()
-# # print("Area of the triangle is :",area)
-# # print("Perimeter of the triangle is :",perimeter)
+    area=t.area()
+    perimeter=t.perimeter()
+    print("Area of the triangle is :",area)
+    print("Perimeter of the triangle is :",perimeter)
+else:
+    print ("Executed when imported")
 

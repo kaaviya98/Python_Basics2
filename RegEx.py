@@ -18,7 +18,7 @@ string = '''39801 356, 2102 1111'''
 pattern = '(\d{3}) (\d{2})'
 
 # match variable contains a Match object.
-match = re.finditer(pattern, string,flags=re.I) 
+match = re.finditer(pattern, string) 
 if match:
      for i in match:
          print(i)
